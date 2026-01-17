@@ -1,0 +1,84 @@
+.system-logs {
+  padding: 1.5rem;
+}
+
+.logs-container {
+  background: #000;
+  border: 1px solid #333;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 0;
+  overflow: hidden;
+}
+
+.logs-header {
+  background: #111;
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #10b981;
+  font-weight: 600;
+}
+
+.logs-list {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.log-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: background 0.2s ease;
+}
+
+.log-item:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+.log-icon {
+  color: var(--text-tertiary);
+  padding-top: 2px;
+}
+
+.log-content {
+  flex: 1;
+}
+
+.log-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.log-action {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.log-time {
+  color: var(--text-tertiary);
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.log-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.log-user {
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.log-meta {
+  color: var(--text-tertiary);
+  font-size: 0.85rem;
+  word-break: break-all;
+}

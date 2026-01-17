@@ -1,0 +1,24 @@
+﻿Logging in as admin...
+Login response: {
+  requireMfa: true,
+  tempToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjA2MjQ3ZWY1YjczM2VhOTU2MzQ3NCIsImlzTWZhUGVuZGluZyI6dHJ1ZSwiaWF0IjoxNzYzNzQ0NDY5LCJleHAiOjE3NjM3NDUwNjl9.3O5FFBCZQR-qoggHiGre57aVQZyD5fetZ9AD-WZGURY',
+  message: 'MFA codes sent to email and phone'
+}
+
+Verifying MFA with 123456...
+node : Error: { message: 
+'Route not found' }
+At line:1 char:1
++ node test-admin-setup.js 
+2>&1 | Out-File -FilePath 
+test-output.txt -E ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo          
+    : NotSpecified: (Error  
+  : { message: 'Route not   
+  found' }:String) [], R    
+emoteException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 

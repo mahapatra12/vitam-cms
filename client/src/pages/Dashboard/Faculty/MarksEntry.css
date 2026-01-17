@@ -1,0 +1,84 @@
+.marks-entry {
+  padding: 1.5rem;
+}
+
+.controls-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.control-group label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.control-group select {
+  background: rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.control-group select:focus {
+  border-color: var(--primary);
+}
+
+.marks-table-container {
+  padding: 0;
+  overflow: hidden;
+}
+
+.marks-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.marks-table th {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  background: rgba(0,0,0,0.3);
+  color: var(--text-secondary);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.marks-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.mark-input {
+  width: 100px;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mark-input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.action-footer {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: flex-end;
+}

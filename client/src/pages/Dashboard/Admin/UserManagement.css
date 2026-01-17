@@ -1,0 +1,143 @@
+.user-management {
+  padding: 1.5rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  gap: 0.5rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0;
+  outline: none;
+  width: 200px;
+}
+
+.filter-dropdown {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.filter-dropdown select {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  appearance: none;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.filter-dropdown select option {
+  background: #1e1e1e;
+  color: white;
+}
+
+.users-table-container {
+  overflow-x: auto;
+  padding: 0; /* Override default card padding for table */
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.users-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  color: var(--text-primary);
+}
+
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar-xs {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: 500;
+}
+
+.user-email {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.role-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.role-badge.admin { background: rgba(239, 68, 68, 0.2); color: #fca5a5; }
+.role-badge.hod { background: rgba(245, 158, 11, 0.2); color: #fcd34d; }
+.role-badge.faculty { background: rgba(59, 130, 246, 0.2); color: #93c5fd; }
+.role-badge.student { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; }
+
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.status-indicator::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.role-select {
+  background: rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
