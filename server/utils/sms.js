@@ -17,8 +17,12 @@ try {
  */
 exports.sendSMS = async (phoneNumber, message) => {
   try {
-    // In development, just log the message
-    if (process.env.NODE_ENV === 'development' || !process.env.TWILIO_SID) {
+    // Check if keys are missing OR explicitly set to placeholders
+    const isMock = process.env.NODE_ENV === 'development' || 
+                   !process.env.TWILIO_SID || 
+                   process.env.TWILIO_SID.includes('your_twilio');
+
+    if (isMock) {
       console.log(`[MOCK SMS] To ${phoneNumber}: ${message}`);
       return { success: true, mock: true };
     }
